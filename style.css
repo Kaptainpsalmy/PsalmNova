@@ -252,6 +252,7 @@ body {
 .hero-image {
     display: flex;
     justify-content: center;
+    padding: 3%;
 }
 
 .profile-img {
