@@ -249,10 +249,12 @@ body {
     align-items: center;
 }
 
+
+
 .hero-image {
     display: flex;
     justify-content: center;
-    padding: 3%;
+    padding: 5%;
 }
 
 .profile-img {
