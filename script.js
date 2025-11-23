@@ -52,12 +52,12 @@ const servicesData = [
 // Projects data - Add/remove projects here
 const projectsData = [
     {
-        title: "AI Research Assistant",
-        description: "An intelligent research tool that helps academics analyze and organize research papers using machine learning algorithms.",
-        tools: ["Python", "TensorFlow", "Flask", "MySQL"],
-        image: "Project 1",
-        link: "https://github.com/yourusername/project1" // Add your project links here
-    },
+    title: "Morse Code Converter",
+    description: "A web-based Morse Code Translator built with Flask that converts text to Morse code and Morse code back to text. Designed for speed, accuracy, and a clean UI.",
+    tools: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=60",
+    link: "https://morse-code-converter-7hfe.onrender.com/"
+},
     {
         title: "Automated Data Pipeline",
         description: "A scalable data processing system that automates ETL workflows and generates real-time analytics dashboards.",
