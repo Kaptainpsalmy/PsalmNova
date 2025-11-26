@@ -52,6 +52,14 @@ const servicesData = [
 // Projects data - Add/remove projects here
 const projectsData = [
     {
+    title: "Movie & TV Show Explorer",
+    description: "A dynamic movie and TV discovery platform built with Flask and TMDB API. Features real-time search, trending movies, detailed pages, categories, and an admin panel for managing recommendations. Designed with a responsive UI, glassmorphism effects, and optimized for fast API-driven browsing.",
+    tools: ["Python", "Flask", "SQLite", "HTML", "CSS", "JavaScript", "TMDB API", "Vercel"],
+    image: "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1200&q=60",
+    link: "https://psalmnova-movie-explorer.vercel.app/"
+},
+
+    {
     title: "Morse Code Converter",
     description: "A web-based Morse Code Translator built with Flask that converts text to Morse code and Morse code back to text. Designed for speed, accuracy, and a clean UI.",
     tools: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
