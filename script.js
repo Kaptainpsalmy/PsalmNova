@@ -56,7 +56,7 @@ const projectsData = [
     title: "SickleSense – Sickle Cell Early Warning & Support System",
     description: "A digital health platform designed to predict sickle cell pain crises and provide personalized guidance for patients and caregivers. Built the entire backend system, integrating user management, health logging, early-warning logic, and AI-powered predictions. The MVP uses patient-logged data to estimate crisis risk and deliver actionable recommendations, with future phases supporting wearable integrations, doctor dashboards, and telemedicine.",
     tools: ["Python", "Flask", "PostgreSQL", "JWT Auth", "AI/ML Integration", "REST API", "Cloud Deployment"],
-    image: "https://unsplash.com/photos/a-red-tomato-with-a-tiny-spider-on-it-U52NFVUsP7g",
+    image: "https://media.istockphoto.com/id/1127069581/photo/medical-technology-concept.jpg?s=1024x1024&w=is&k=20&c=ivxgRYnBGoI0eDufp2-XR0tsp7jZcOyizisuZCsfQ70=",
     link: "https://Sickle-sense.vercel.app "
 },
     {
