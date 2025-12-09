@@ -51,6 +51,14 @@ const servicesData = [
 
 // Projects data - Add/remove projects here
 const projectsData = [
+
+{
+    title: "SickleSense – Sickle Cell Early Warning & Support System",
+    description: "A digital health platform designed to predict sickle cell pain crises and provide personalized guidance for patients and caregivers. Built the entire backend system, integrating user management, health logging, early-warning logic, and AI-powered predictions. The MVP uses patient-logged data to estimate crisis risk and deliver actionable recommendations, with future phases supporting wearable integrations, doctor dashboards, and telemedicine.",
+    tools: ["Python", "Flask", "PostgreSQL", "JWT Auth", "AI/ML Integration", "REST API", "Cloud Deployment"],
+    image: "https://images.unsplash.com/photo-1580281657527-47f249e8f3f5?auto=format&fit=crop&w=1200&q=60",
+    link: "https://your-link-if-you-have-one.com"
+},
     {
     title: "Movie & TV Show Explorer",
     description: "A dynamic movie and TV discovery platform built with Flask and TMDB API. Features real-time search, trending movies, detailed pages, categories, and an admin panel for managing recommendations. Designed with a responsive UI, glassmorphism effects, and optimized for fast API-driven browsing.",
