@@ -73,28 +73,7 @@ const projectsData = [
     tools: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=60",
     link: "https://morse-code-converter-7hfe.onrender.com/"
-},
-    {
-        title: "Automated Data Pipeline",
-        description: "A scalable data processing system that automates ETL workflows and generates real-time analytics dashboards.",
-        tools: ["Python", "Pandas", "Docker", "PostgreSQL"],
-        image: "Project 2",
-        link: "https://github.com/yourusername/project2"
-    },
-    {
-        title: "Academic Thesis Manager",
-        description: "Comprehensive tool for managing thesis projects, including citation management and progress tracking.",
-        tools: ["Django", "React", "SQLite", "Bootstrap"],
-        image: "Project 3",
-        link: "https://github.com/yourusername/project3"
-    },
-    {
-        title: "ML Model Deployment Platform",
-        description: "Platform for deploying, monitoring, and scaling machine learning models in production environments.",
-        tools: ["Flask", "Docker", "Kubernetes", "MongoDB"],
-        image: "Project 4",
-        link: "https://github.com/yourusername/project4"
-    }
+}   
 ];
 
 // Certifications data - Add your certifications here
