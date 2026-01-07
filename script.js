@@ -1,6 +1,6 @@
 // ===== Portfolio Data - Easy to Update =====
 
-// Services data - Add/remove services here
+// Services data
 const servicesData = [
     {
         icon: 'ri-code-s-slash-line',
@@ -49,7 +49,7 @@ const servicesData = [
     }
 ];
 
-// Projects data - Add/remove projects here
+// Projects data
 const projectsData = [
 
 {
@@ -59,6 +59,27 @@ const projectsData = [
     image: "https://images.unsplash.com/photo-1706643568191-c4f9b8fc8820?q=80&w=760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "https://Sickle-sense.vercel.app "
 },
+
+{
+    title: "AutoEDA – Automated Data Cleaning & Exploratory Analysis",
+    description: "A full-stack data analysis web application that automatically cleans messy CSV datasets, detects column types, handles missing values, removes duplicates, and generates insightful exploratory visualizations. The system intelligently identifies numeric, categorical, date, and text columns, applies data validation rules, and produces distribution histograms, correlation heatmaps, outlier boxplots, and categorical summaries. Built to run serverlessly with robust file handling, dynamic visualization generation, and production-ready deployment.",
+    tools: [
+        "Python",
+        "Flask",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Data Cleaning",
+        "EDA Automation",
+        "File Upload Handling",
+        "Serverless Deployment",
+        "Vercel"
+    ],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=60",
+    link: "https://autoeda-one.vercel.app"
+},
+
     {
     title: "Movie & TV Show Explorer",
     description: "A dynamic movie and TV discovery platform built with Flask and TMDB API. Features real-time search, trending movies, detailed pages, categories, and an admin panel for managing recommendations. Designed with a responsive UI, glassmorphism effects, and optimized for fast API-driven browsing.",
@@ -76,7 +97,6 @@ const projectsData = [
 }   
 ];
 
-// Certifications data - Add your certifications here
 const certificationsData = [
     {
         icon: 'ri-award-line',
@@ -145,14 +165,18 @@ function populateServices() {
     `).join('');
 }
 
+
+const projectCategories = ['All', 'Web', 'AI/ML', 'Automation', 'Data Science'];
+
 // Populate projects section
+// Update the populateProjects function in script.js
 function populateProjects() {
     const projectsGrid = document.querySelector('.projects-grid');
     projectsGrid.innerHTML = projectsData.map(project => `
         <div class="project-card glass-card">
             <div class="project-image">
-    <img src="${project.image}" alt="${project.title}">
-</div>
+                <img src="${project.image}" alt="${project.title}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=60'">
+            </div>
             <div class="project-content">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
@@ -160,12 +184,13 @@ function populateProjects() {
                     ${project.tools.map(tool => `<span class="tool-tag">${tool}</span>`).join('')}
                 </div>
                 <a href="${project.link}" target="_blank" class="btn btn-secondary project-link">
-                    View Project
+                    <i class="ri-external-link-line"></i> View Project
                 </a>
             </div>
         </div>
     `).join('');
 }
+
 
 // Populate certifications section
 function populateCertifications() {
@@ -332,7 +357,6 @@ function showNotification(message, type = 'info') {
         <button onclick="this.parentElement.remove()">&times;</button>
     `;
     
-    // Add styles if not already added
     if (!document.querySelector('#notification-styles')) {
         const styles = document.createElement('style');
         styles.id = 'notification-styles';
