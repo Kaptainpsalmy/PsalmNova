@@ -59,7 +59,43 @@ const projectsData = [
     image: "https://images.unsplash.com/photo-1706643568191-c4f9b8fc8820?q=80&w=760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "https://Sickle-sense.vercel.app "
 },
-
+{
+    title: "LAUTECH Smart Assistant – NLP FAQ Chatbot",
+    description: "An intelligent university-focused FAQ chatbot built to provide instant answers on admissions, school fees, academic programs, and campus life. Implemented TF-IDF vectorization with cosine similarity for semantic question matching, enhanced with fuzzy matching and custom intent mapping to handle typos and varied phrasing. Includes confidence scoring, fallback handlers, and an adaptive learning system that logs unknown questions for continuous improvement. Features a secure JWT-protected admin dashboard with FAQ CRUD operations, analytics, and bulk import/export capabilities. Deployed serverlessly on Vercel with PostgreSQL (Neon) for production data management.",
+    tools: [
+        "Python",
+        "Flask",
+        "scikit-learn",
+        "NLTK",
+        "TF-IDF",
+        "Cosine Similarity",
+        "PostgreSQL",
+        "JWT Authentication",
+        "Chart.js",
+        "Serverless Deployment",
+        "Vercel"
+    ],
+    image: "https://media.istockphoto.com/id/1465545513/photo/chatbot.webp?a=1&b=1&s=612x612&w=0&k=20&c=4ffIHW4R87I81mtBWwFj57casqjDSTcHXFHDD1Xqi2A=",
+    link: "https://lautech-chatbot.vercel.app/"
+},
+{
+    title: "Language Translation Tool",
+    description: "A production-ready multilingual translation platform supporting 100+ languages with automatic language detection and integrated text-to-speech functionality. Built with Flask and Google Translate API, the system features real-time translation, translation history management, keyboard shortcuts, offline detection, and downloadable outputs. Designed with a modern responsive UI, dark/light mode support, and robust error handling to ensure seamless user experience across devices. Deployed serverlessly on Vercel with optimized API performance and client-side state management.",
+    tools: [
+        "Python",
+        "Flask",
+        "Google Translate API",
+        "gTTS",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Responsive UI",
+        "Serverless Deployment",
+        "Vercel"
+    ],
+    image: "https://media.istockphoto.com/id/2203038750/photo/translate-foreign-language-online-internet-software-button.webp?a=1&b=1&s=612x612&w=0&k=20&c=Gi8H0E2odJzF-5iYWtjMr0cFFd5_MKITYoOHRqGYGRo=",
+    link: "https://language-translation-too-indol.vercel.app"
+},
 {
     title: "AutoEDA – Automated Data Cleaning & Exploratory Analysis",
     description: "A full-stack data analysis web application that automatically cleans messy CSV datasets, detects column types, handles missing values, removes duplicates, and generates insightful exploratory visualizations. The system intelligently identifies numeric, categorical, date, and text columns, applies data validation rules, and produces distribution histograms, correlation heatmaps, outlier boxplots, and categorical summaries. Built to run serverlessly with robust file handling, dynamic visualization generation, and production-ready deployment.",
