@@ -136,22 +136,26 @@ const projectsData = [
 const certificationsData = [
     {
         icon: 'ri-award-line',
-        title: 'Python Professional Certification',
-        issuer: 'Python Institute'
+        title: 'Python Certification',
+        issuer: 'HackerRank',
+        link: 'https://www.hackerrank.com/certificates/iframe/eefa525fc35f'
     },
     {
         icon: 'ri-award-line',
-        title: 'Machine Learning Specialist',
+        title: 'Backend Developer – SickleSense Project',
+        issuer: 'Futurize Founder Academy 2025'
+    },
+    {
+        icon: 'ri-award-line',
+        title: 'IBM Data Science Professional Certificate (In Progress)',
         issuer: 'Coursera'
     },
     {
         icon: 'ri-award-line',
         title: 'Full Stack Development',
         issuer: 'FreeCodeCamp'
-    },
-    
+    }
 ];
-
 // Skills data with real devicon classes
 const skillsData = [
     { name: 'Python', icon: 'devicon-python-plain' },
