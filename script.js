@@ -1,139 +1,119 @@
 // ===== Portfolio Data - Easy to Update =====
 
-// Services data
+// Services data - UPDATED with AI Agent focus
 const servicesData = [
     {
-        icon: 'ri-code-s-slash-line',
-        title: 'Full Python Development',
-        description: 'End-to-end Python solutions from scripting to complex applications'
-    },
-    {
-        icon: 'ri-server-line',
-        title: 'Backend Development',
-        description: 'Flask & Django development with RESTful APIs and database integration'
+        icon: 'ri-robot-line',
+        title: 'Agentic AI Systems',
+        description: 'Autonomous AI agents, multi-agent architectures, tool integration, and LLM-powered workflows'
     },
     {
         icon: 'ri-brain-line',
-        title: 'AI & Machine Learning',
-        description: 'Intelligent systems, predictive models, and machine learning solutions'
+        title: 'RAG & LLM Solutions',
+        description: 'Retrieval-Augmented Generation systems, LLM integration, and intelligent document processing'
     },
     {
-        icon: 'ri-line-chart-line',
-        title: 'Data Science',
-        description: 'Data analysis, visualization, and insights generation'
+    icon: 'ri-server-line',
+        title: 'Backend Development',
+        description: 'FastAPI, Django, Node.js, Laravel - RESTful APIs, authentication, microservices, and scalable architectures'
     },
     {
-        icon: 'ri-robot-line',
-        title: 'Automation Engineering',
-        description: 'Process automation, workflow optimization, and task automation'
-    },
-    {
-        icon: 'ri-bug-line',
-        title: 'Software Testing',
-        description: 'Comprehensive testing strategies and quality assurance'
+        icon: 'ri-code-s-slash-line',
+        title: 'Full Stack Python',
+        description: 'End-to-end Python solutions from backend APIs to AI-powered applications'
     },
     {
         icon: 'ri-database-2-line',
-        title: 'Database Development',
-        description: 'Database design, optimization, and management'
+        title: 'Database & Caching',
+        description: 'PostgreSQL, Redis, MongoDB - optimized queries and high-performance caching strategies'
     },
     {
-        icon: 'ri-article-line',
-        title: 'Academic Writing',
-        description: 'Research papers, thesis, and academic documentation'
+        icon: 'ri-cloud-line',
+        title: 'Containerization & Deployment',
+        description: 'Docker containerization, production deployments, and scalable infrastructure'
     },
     {
-        icon: 'ri-money-dollar-circle-line',
-        title: 'Grant Writing',
-        description: 'Research grant proposals and funding applications'
+        icon: 'ri-line-chart-line',
+        title: 'Data Science & Analytics',
+        description: 'Predictive analytics, feature engineering, and data pipeline development'
+    },
+    {
+        icon: 'ri-flask-line',
+        title: 'Async Processing',
+        description: 'Background workers, task queues, and real-time processing with Redis'
     }
 ];
 
-// Projects data
+// Projects data - UPDATED with current projects
 const projectsData = [
-
 {
-    title: "SickleSense – Sickle Cell Early Warning & Support System",
-    description: "A digital health platform designed to predict sickle cell pain crises and provide personalized guidance for patients and caregivers. Built the entire backend system, integrating user management, health logging, early-warning logic, and AI-powered predictions. The MVP uses patient-logged data to estimate crisis risk and deliver actionable recommendations, with future phases supporting wearable integrations, doctor dashboards, and telemedicine.",
-    tools: ["Python", "Flask", "PostgreSQL", "JWT Auth", "AI/ML Integration", "REST API", "Cloud Deployment"],
-    image: "https://images.unsplash.com/photo-1706643568191-c4f9b8fc8820?q=80&w=760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "https://Sickle-sense.vercel.app "
+    title: "Smart Flight Agent – Autonomous AI System for Flight Monitoring & Prediction",
+    description: "Production-grade autonomous AI agent system that searches flights, monitors prices, predicts trends, and sends alerts. Implemented agent-based architecture with task planning, tool integration, and reasoning modules. Built backend APIs with FastAPI, integrated background workers with Redis for continuous monitoring, and connected external flight data services. Features include price trend prediction, automated alerts, and optimal booking recommendations.",
+    tools: ["Python", "FastAPI", "Redis", "Agentic AI", "LLM Integration", "Background Workers", "REST API", "Docker"],
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=60",
+    link: "#"
+},
+{
+    title: "SabreCWA Assessment Platform – Scalable Test & Evaluation System",
+    description: "Full-featured backend system for test creation, session management, and real-time assessment workflows. Built RESTful APIs for authentication, question management, test lifecycle (create, publish, close), and session tracking. Features include file uploads via presigned URLs, real-time session monitoring, analytics, and role-based admin controls.",
+    tools: ["Python", "FastAPI", "PostgreSQL", "JWT Auth", "REST API", "File Upload", "Analytics"],
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=60",
+    link: "#"
+},
+{
+    title: "SickleSense – Sickle Cell Early Warning System",
+    description: "Digital health platform predicting sickle cell pain crises with personalized guidance. Built entire backend system integrating user management, health logging, early-warning logic, and machine learning predictions. Features crisis risk estimation and actionable recommendations.",
+    tools: ["Python", "Flask", "PostgreSQL", "JWT Auth", "scikit-learn", "REST API", "Cloud Deployment"],
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=60",
+    link: "https://Sickle-sense.vercel.app"
 },
 {
     title: "LAUTECH Smart Assistant – NLP FAQ Chatbot",
-    description: "An intelligent university-focused FAQ chatbot built to provide instant answers on admissions, school fees, academic programs, and campus life. Implemented TF-IDF vectorization with cosine similarity for semantic question matching, enhanced with fuzzy matching and custom intent mapping to handle typos and varied phrasing. Includes confidence scoring, fallback handlers, and an adaptive learning system that logs unknown questions for continuous improvement. Features a secure JWT-protected admin dashboard with FAQ CRUD operations, analytics, and bulk import/export capabilities. Deployed serverlessly on Vercel with PostgreSQL (Neon) for production data management.",
-    tools: [
-        "Python",
-        "Flask",
-        "scikit-learn",
-        "NLTK",
-        "TF-IDF",
-        "Cosine Similarity",
-        "PostgreSQL",
-        "JWT Authentication",
-        "Chart.js",
-        "Serverless Deployment",
-        "Vercel"
-    ],
+    description: "Intelligent university FAQ chatbot using TF-IDF vectorization with cosine similarity for semantic matching. Features fuzzy matching for typo handling, confidence scoring, fallback handlers, and adaptive learning. Includes JWT-protected admin dashboard with analytics and bulk import/export.",
+    tools: ["Python", "Flask", "scikit-learn", "NLTK", "TF-IDF", "PostgreSQL", "JWT Auth", "Vercel"],
     image: "https://media.istockphoto.com/id/1465545513/photo/chatbot.webp?a=1&b=1&s=612x612&w=0&k=20&c=4ffIHW4R87I81mtBWwFj57casqjDSTcHXFHDD1Xqi2A=",
     link: "https://lautech-chatbot.vercel.app/"
 },
 {
     title: "Language Translation Tool",
-    description: "A production-ready multilingual translation platform supporting 100+ languages with automatic language detection and integrated text-to-speech functionality. Built with Flask and Google Translate API, the system features real-time translation, translation history management, keyboard shortcuts, offline detection, and downloadable outputs. Designed with a modern responsive UI, dark/light mode support, and robust error handling to ensure seamless user experience across devices. Deployed serverlessly on Vercel with optimized API performance and client-side state management.",
-    tools: [
-        "Python",
-        "Flask",
-        "Google Translate API",
-        "gTTS",
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Responsive UI",
-        "Serverless Deployment",
-        "Vercel"
-    ],
+    description: "Production-ready multilingual translation platform supporting 100+ languages with automatic language detection and text-to-speech. Features translation history, keyboard shortcuts, offline detection, dark/light mode, and robust error handling.",
+    tools: ["Python", "Flask", "Google Translate API", "gTTS", "JavaScript", "Responsive UI", "Vercel"],
     image: "https://media.istockphoto.com/id/2203038750/photo/translate-foreign-language-online-internet-software-button.webp?a=1&b=1&s=612x612&w=0&k=20&c=Gi8H0E2odJzF-5iYWtjMr0cFFd5_MKITYoOHRqGYGRo=",
     link: "https://language-translation-too-indol.vercel.app"
 },
 {
     title: "AutoEDA – Automated Data Cleaning & Exploratory Analysis",
-    description: "A full-stack data analysis web application that automatically cleans messy CSV datasets, detects column types, handles missing values, removes duplicates, and generates insightful exploratory visualizations. The system intelligently identifies numeric, categorical, date, and text columns, applies data validation rules, and produces distribution histograms, correlation heatmaps, outlier boxplots, and categorical summaries. Built to run serverlessly with robust file handling, dynamic visualization generation, and production-ready deployment.",
-    tools: [
-        "Python",
-        "Flask",
-        "Pandas",
-        "NumPy",
-        "Matplotlib",
-        "Seaborn",
-        "Data Cleaning",
-        "EDA Automation",
-        "File Upload Handling",
-        "Serverless Deployment",
-        "Vercel"
-    ],
+    description: "Full-stack data analysis web app that automatically cleans CSV datasets, detects column types, handles missing values, and generates visualizations including histograms, correlation heatmaps, and outlier boxplots.",
+    tools: ["Python", "Flask", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Data Cleaning", "Vercel"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=60",
     link: "https://autoeda-one.vercel.app"
 },
-
-    {
+{
     title: "Movie & TV Show Explorer",
-    description: "A dynamic movie and TV discovery platform built with Flask and TMDB API. Features real-time search, trending movies, detailed pages, categories, and an admin panel for managing recommendations. Designed with a responsive UI, glassmorphism effects, and optimized for fast API-driven browsing.",
-    tools: ["Python", "Flask", "SQLite", "HTML", "CSS", "JavaScript", "TMDB API", "Vercel"],
+    description: "Dynamic movie discovery platform with real-time search, trending movies, detailed pages, categories, and admin panel. Features responsive UI with glassmorphism effects and optimized API-driven browsing.",
+    tools: ["Python", "Flask", "SQLite", "TMDB API", "JavaScript", "CSS3", "Vercel"],
     image: "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1200&q=60",
     link: "https://psalmnova-movie-explorer.vercel.app/"
-},
-
-    {
-    title: "Morse Code Converter",
-    description: "A web-based Morse Code Translator built with Flask that converts text to Morse code and Morse code back to text. Designed for speed, accuracy, and a clean UI.",
-    tools: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=60",
-    link: "https://morse-code-converter-7hfe.onrender.com/"
-}   
+}
 ];
 
+// Certifications data
 const certificationsData = [
+    {
+        icon: 'ri-award-line',
+        title: 'IBM Data Science Methodology',
+        issuer: 'IBM (2026)'
+    },
+    {
+        icon: 'ri-award-line',
+        title: 'Tools for Data Science',
+        issuer: 'IBM (2026)'
+    },
+    {
+        icon: 'ri-award-line',
+        title: 'What is Data Science?',
+        issuer: 'IBM (2026)'
+    },
     {
         icon: 'ri-award-line',
         title: 'Python Certification',
@@ -144,30 +124,29 @@ const certificationsData = [
         icon: 'ri-award-line',
         title: 'Backend Developer – SickleSense Project',
         issuer: 'Futurize Founder Academy 2025'
-    },
-    {
-        icon: 'ri-award-line',
-        title: 'IBM Data Science Professional Certificate (In Progress)',
-        issuer: 'Coursera'
-    },
-    {
-        icon: 'ri-award-line',
-        title: 'Full Stack Development',
-        issuer: 'FreeCodeCamp'
     }
 ];
-// Skills data with real devicon classes
+
+// Skills data - UPDATED with current stack
 const skillsData = [
     { name: 'Python', icon: 'devicon-python-plain' },
-    { name: 'Flask', icon: 'devicon-flask-original' },
+    { name: 'FastAPI', icon: 'devicon-fastapi-plain' },
     { name: 'Django', icon: 'devicon-django-plain' },
-    { name: 'TensorFlow', icon: 'devicon-tensorflow-original' },
-    { name: 'MySQL', icon: 'devicon-mysql-plain' },
+    { name: 'Flask', icon: 'devicon-flask-original' },
+    { name: 'Node.js', icon: 'devicon-nodejs-plain' },
+    { name: 'PHP', icon: 'devicon-php-plain' },
+    { name: 'Laravel', icon: 'devicon-laravel-plain' },
     { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
+    { name: 'Redis', icon: 'devicon-redis-plain' },
+    { name: 'MongoDB', icon: 'devicon-mongodb-plain' },
+    { name: 'Docker', icon: 'devicon-docker-plain' },
     { name: 'Git', icon: 'devicon-git-plain' },
     { name: 'JavaScript', icon: 'devicon-javascript-plain' },
-    { name: 'HTML5', icon: 'devicon-html5-plain' },
-    { name: 'CSS3', icon: 'devicon-css3-plain' }
+    { name: 'React', icon: 'devicon-react-original' },
+    { name: 'Next.js', icon: 'devicon-nextjs-original' },
+    { name: 'scikit-learn', icon: 'devicon-scikitlearn-plain' },
+    { name: 'Pandas', icon: 'devicon-pandas-original' },
+    { name: 'NumPy', icon: 'devicon-numpy-original' }
 ];
 
 // ===== DOM Elements =====
@@ -196,90 +175,100 @@ function initializePortfolio() {
 // Populate services section
 function populateServices() {
     const servicesGrid = document.querySelector('.services-grid');
-    servicesGrid.innerHTML = servicesData.map(service => `
-        <div class="service-card glass-card">
-            <i class="${service.icon} service-icon"></i>
-            <h3>${service.title}</h3>
-            <p>${service.description}</p>
-        </div>
-    `).join('');
+    if (servicesGrid) {
+        servicesGrid.innerHTML = servicesData.map(service => `
+            <div class="service-card glass-card">
+                <i class="${service.icon} service-icon"></i>
+                <h3>${service.title}</h3>
+                <p>${service.description}</p>
+            </div>
+        `).join('');
+    }
 }
-
-
-const projectCategories = ['All', 'Web', 'AI/ML', 'Automation', 'Data Science'];
 
 // Populate projects section
-// Update the populateProjects function in script.js
 function populateProjects() {
     const projectsGrid = document.querySelector('.projects-grid');
-    projectsGrid.innerHTML = projectsData.map(project => `
-        <div class="project-card glass-card">
-            <div class="project-image">
-                <img src="${project.image}" alt="${project.title}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=60'">
-            </div>
-            <div class="project-content">
-                <h3>${project.title}</h3>
-                <p>${project.description}</p>
-                <div class="project-tools">
-                    ${project.tools.map(tool => `<span class="tool-tag">${tool}</span>`).join('')}
+    if (projectsGrid) {
+        projectsGrid.innerHTML = projectsData.map(project => `
+            <div class="project-card glass-card">
+                <div class="project-image">
+                    <img src="${project.image}" alt="${project.title}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=60'">
                 </div>
-                <a href="${project.link}" target="_blank" class="btn btn-secondary project-link">
-                    <i class="ri-external-link-line"></i> View Project
-                </a>
+                <div class="project-content">
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
+                    <div class="project-tools">
+                        ${project.tools.map(tool => `<span class="tool-tag">${tool}</span>`).join('')}
+                    </div>
+                    <a href="${project.link}" target="_blank" class="btn btn-secondary project-link">
+                        <i class="ri-external-link-line"></i> View Project
+                    </a>
+                </div>
             </div>
-        </div>
-    `).join('');
+        `).join('');
+    }
 }
-
 
 // Populate certifications section
 function populateCertifications() {
     const certificationsGrid = document.querySelector('.certifications-grid');
-    certificationsGrid.innerHTML = certificationsData.map(cert => `
-        <div class="certification-card glass-card">
-            <i class="${cert.icon} cert-icon"></i>
-            <h3>${cert.title}</h3>
-            <p>${cert.issuer}</p>
-        </div>
-    `).join('');
+    if (certificationsGrid) {
+        certificationsGrid.innerHTML = certificationsData.map(cert => `
+            <div class="certification-card glass-card">
+                <i class="${cert.icon} cert-icon"></i>
+                <h3>${cert.title}</h3>
+                <p>${cert.issuer}</p>
+                ${cert.link ? `<a href="${cert.link}" target="_blank" class="cert-link">Verify</a>` : ''}
+            </div>
+        `).join('');
+    }
 }
 
 // Populate skills section
 function populateSkills() {
     const skillsGrid = document.querySelector('.skills-grid');
-    skillsGrid.innerHTML = skillsData.map(skill => `
-        <div class="skill-item glass-card">
-            <i class="${skill.icon} skill-icon"></i>
-            <span>${skill.name}</span>
-        </div>
-    `).join('');
+    if (skillsGrid) {
+        skillsGrid.innerHTML = skillsData.map(skill => `
+            <div class="skill-item glass-card">
+                <i class="${skill.icon} skill-icon"></i>
+                <span>${skill.name}</span>
+            </div>
+        `).join('');
+    }
 }
 
 // ===== Event Listeners Setup =====
 function setupEventListeners() {
     // Navbar scroll effect
     window.addEventListener('scroll', handleScroll);
-    
+
     // Back to top button
-    backToTopBtn.addEventListener('click', scrollToTop);
-    
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', scrollToTop);
+    }
+
     // Hamburger menu for mobile
-    hamburger.addEventListener('click', toggleMobileMenu);
-    
+    if (hamburger) {
+        hamburger.addEventListener('click', toggleMobileMenu);
+    }
+
     // Close mobile menu when clicking on links
     navLinks.forEach(link => {
         link.addEventListener('click', closeMobileMenu);
     });
-    
+
     // Smooth scrolling for navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            scrollToSection(targetId.substring(1));
+            if (targetId && targetId !== '#') {
+                scrollToSection(targetId.substring(1));
+            }
         });
     });
-    
+
     // Form submission
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
@@ -290,17 +279,21 @@ function setupEventListeners() {
 // ===== Scroll Handling =====
 function handleScroll() {
     // Navbar background on scroll
-    if (window.scrollY > 100) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+    if (navbar) {
+        if (window.scrollY > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
     }
-    
+
     // Back to top button visibility
-    if (window.scrollY > 500) {
-        backToTopBtn.classList.add('visible');
-    } else {
-        backToTopBtn.classList.remove('visible');
+    if (backToTopBtn) {
+        if (window.scrollY > 500) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
     }
 }
 
@@ -308,13 +301,12 @@ function handleScroll() {
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
-        const offsetTop = section.offsetTop - 80; // Account for fixed navbar
+        const offsetTop = section.offsetTop - 80;
         window.scrollTo({
             top: offsetTop,
             behavior: 'smooth'
         });
-        
-        // Update URL without page reload
+
         history.pushState(null, null, `#${sectionId}`);
     }
 }
@@ -328,13 +320,17 @@ function scrollToTop() {
 
 // ===== Mobile Menu =====
 function toggleMobileMenu() {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
+    if (hamburger && navMenu) {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    }
 }
 
 function closeMobileMenu() {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
+    if (hamburger && navMenu) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
 }
 
 // ===== Intersection Observer for Section Animations =====
@@ -343,19 +339,18 @@ function setupIntersectionObserver() {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-    
+
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                
-                // Update active navigation link
+
                 const sectionId = entry.target.getAttribute('data-section');
                 updateActiveNavLink(sectionId);
             }
         });
     }, observerOptions);
-    
+
     sections.forEach(section => {
         observer.observe(section);
     });
@@ -374,29 +369,23 @@ function updateActiveNavLink(activeSection) {
 // ===== Form Handling =====
 function handleFormSubmit(e) {
     e.preventDefault();
-    
-    // Get form data
+
     const formData = new FormData(e.target);
     const formProps = Object.fromEntries(formData);
-    
-    // Here you would typically send the data to Formspree
-    // For now, we'll just show a success message
+
     showNotification('Message sent successfully!', 'success');
-    
-    // Reset form
     e.target.reset();
 }
 
 // ===== Notification System =====
 function showNotification(message, type = 'info') {
-    // Create notification element
     const notification = document.createElement('div');
     notification.className = `notification ${type}`;
     notification.innerHTML = `
         <span>${message}</span>
         <button onclick="this.parentElement.remove()">&times;</button>
     `;
-    
+
     if (!document.querySelector('#notification-styles')) {
         const styles = document.createElement('style');
         styles.id = 'notification-styles';
@@ -435,16 +424,16 @@ function showNotification(message, type = 'info') {
         `;
         document.head.appendChild(styles);
     }
-    
+
     document.body.appendChild(notification);
-    
-    // Auto remove after 5 seconds
+
     setTimeout(() => {
         if (notification.parentElement) {
             notification.remove();
         }
     }, 5000);
 }
+
 
 // ===== Export functions for global access =====
 window.scrollToSection = scrollToSection;
