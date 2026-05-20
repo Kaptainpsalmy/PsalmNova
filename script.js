@@ -51,7 +51,7 @@ const projectsData = [
     description: "Production-grade autonomous AI agent system that searches flights, monitors prices, predicts trends, and sends alerts. Implemented agent-based architecture with task planning, tool integration, and reasoning modules. Built backend APIs with FastAPI, integrated background workers with Redis for continuous monitoring, and connected external flight data services. Features include price trend prediction, automated alerts, and optimal booking recommendations.",
     tools: ["Python", "FastAPI", "Redis", "Agentic AI", "LLM Integration", "Background Workers", "REST API", "Docker"],
     image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=60",
-    link: "#"
+    link: "https://smart-travel-agent-o5twu2efk65raitds6bij6.streamlit.app/"
 },
 {
     title: "SabreCWA Assessment Platform – Scalable Test & Evaluation System",
